@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat Companion</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+  <script src="https://connect.facebook.net/en_US/fbinstant.6.3.js"></script>
+</head>
+<body>
+  <div class="app-container">
+    <div class="game-start-screen step">
+      <div class="wrapper">
+        <!-- <img src="http://icons.iconarchive.com/icons/iconka/cat-commerce/128/search-icon.png"/> -->
+        <img src="img/search-icon.png"/>
+        <h1>Let’s find your ideal cat companion!</h1>
+        <p>Friends, connections and other people that you play with will be able to see your game activity. The game will have access to your public profile info and the people you know who also play this game.</p>
+        <button class="start-game-btn button">Play Now!</button>
+      </div>
+    </div>
+    <div class="questions step">
+      <div class="wrapper">
+        <!-- <img src="http://icons.iconarchive.com/icons/iconka/cat-commerce/128/percent-icon.png"/> -->
+        <img src="img/percent-icon.png"/>
+        <p class="question-title">I’m a TV & movie buff, and I’d love watching TV with my cat. </p>
+        <form class="options">
+            <label class="label" data-index-number="0"><input class="option" type="radio" name="question1" value=3 required />Always<br></label>
+            <label class="label" data-index-number="1"><input class="option" type="radio" name="question1" value=2 />Sometimes<br></label>
+            <label class="label" data-index-number="2"><input class="option" type="radio" name="question1" value=1 />Never</br></label>
+            <input class="button next" type="button" value="Next" id="submit-one">
+        </form>
+      </div>
+      
+    </div>
+    <div class="questions step">
+        <div class="wrapper">
+          <!-- <img src="http://icons.iconarchive.com/icons/iconka/cat-commerce/128/error-icon.png"/> -->
+          <img src="img/error-icon.png"/>
+          <p class="question-title">I like getting dressed up and doing my hair, and I’d enjoy grooming my cat. </p>
+          <form class="options">
+            <label class="label" data-index-number="3"><input class="option" type="radio" name="question2" value=3 required/>Always<br></label>
+            <label class="label" data-index-number="4"><input class="option" type="radio" name="question2" value=2>Sometimes<br></label>
+            <label class="label" data-index-number="5"><input class="option" type="radio" name="question2" value=1>Never</br></label>
+            <input class="button next" type="button" value="Next" id="submit-two">
+          </form>
+        </div>
+        
+    </div>
+    <div class="questions step">
+        <div class="wrapper">
+          <!-- <img src="http://icons.iconarchive.com/icons/iconka/cat-commerce/128/gift-icon.png"/> -->
+          <img src="img/gift-icon.png"/>
+          <p class="question-title">I like to move around and stay in shape, and I want my cat to be active too. </p>
+          <form class="options">
+            <label class="label" data-index-number="6"><input class="option" type="radio" name="question3" value=3 required/>Always<br></label>
+            <label class="label" data-index-number="7"><input class="option" type="radio" name="question3" value=2>Sometimes<br></label>
+            <label class="label" data-index-number="8"><input class="option" type="radio" name="question3" value=1>Never</br></label>
+            <input class="button next" type="button" value="Next" id="submit-three">
+          </form>
+         
+        </div>
+    </div>
+    <div class="result-screen step">
+      <div class="wrapper">
+        <h2>Your ideal cat companion is...</h2>
+        <div class="cat-image"></div>
+        <div class="cat-breed"></div>
+        <div class="cat-description"></div>
+        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?s=42&appid=267481891260392&id=267481891260392&p[0]=267481891260392&display=popup"><button class="share-result-btn button">Share</button></a>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="quiz.js"></script>
+</html>
